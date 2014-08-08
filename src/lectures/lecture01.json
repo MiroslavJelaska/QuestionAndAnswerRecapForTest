@@ -1,0 +1,32 @@
+[
+    {
+        "question" : {
+            "text" : "Napišite izraz koji opisuje Coulombov zakon.",
+            "image" : null
+        },
+        "answer" : {
+            "text" : "$$F=F_{12}=F_{21}=k\\cdot \\frac{|Q_{1}Q_{2}|}{r^2} \\\\ \\vec{F_{21}}=k \\cdot \\frac{Q_{1}Q_{2}}{r^2} \\cdot \\vec{r_{12o}} \\\\ k= \\frac{1}{4\\pi\\epsilon} = \\frac{1}{4\\pi\\epsilon_{0}\\epsilon_{r}} \\\\ k_0= \\frac{1}{4\\pi\\epsilon_0} \\approx 9\\cdot 10^9 [\\frac{Nm^2}{A^2s^2}=\\frac{Vm}{As}]$$",
+            "image" : null
+        }
+    },
+    {
+        "question" : {
+            "text" : "Napišite izraz koji opisuje Gaussov zakon.",
+            "image" : null
+        },
+        "answer" : {
+            "text" : "Tok vektora električnog pomaka koji izlazi iz volumena $$V$$ kroz zatvorenu plohu $$S$$ jednak je količini naboja obuhvaćenog tom plohom. <br> $$\\Phi= \\oint \\oint \\limits_S \\vec{D} d \\vec{S} = Q_{ob}$$",
+            "image" : null
+        }
+    },
+    {
+        "question" : {
+            "text" : "Napišite izraz za Gaussov zakon za primjer zadan slikom.",
+            "image" : "assets/images/lecture/01/questions/3.svg"
+        },
+        "answer" : {
+            "text" : "$$\\oint \\oint \\limits_S \\vec{D} d \\vec{S} = Q_{ob} = q_1 + q_2$$",
+            "image" : null
+        }
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "question" : {
+            "text" : "Napišite izraz za jakost električnog polja unutar $$(r<R)$$ i izvan metalne kugle $$(r>R)$$, gdje je $$R$$ polumjer kugle. Kugla je nabijena nabojem $$Q>0$$",
+            "image" : "assets/images/lecture/01/questions/4.svg"
+        },
+        "answer" : {
+            "text" : "$$r<R \\Rightarrow E=0$$ <br> $$r>R \\Rightarrow E=\\frac{Q}{\\epsilon S}=k \\cdot \\frac{Q}{R^2}$$",
+            "image" : null
+        }
+    },
+    {
+        "question" : {
+            "text" : "Naznačite smjer i izračunajte iznos sile kojom beskonačno dugi pravocrtni vodiči nabijeni nabojem konstantne linijske gustoće $$\\lambda_{2} \\cdot \\lambda_{1}=10 nC/m$$ djeluju na negativni točkasti naboj $$q=-2 \\mu C$$. Neka je $$a=2m$$.",
+            "image" : null
+        },
+        "answer" : {
+            "text" : "$$F=\\frac{\\lambda_{2} - \\lambda_{1}}{2 \\pi \\epsilon_{0}a } |q| \\\\ F=89.88\\mu N$$",
+            "image" : null
+        }
+    },
+    {
+        "question" : {
+            "text" : "Izračunajte silu kojom negativni točkasti naboj $$q=-1 \\mu C$$ djeluje na ravninu nabijenu nabojem konstante plošne gustoće $$\\sigma=10 pC/m^2$$. Neka je $$a=2m$$. Naznačite i smjer sile.",
+            "image" : null
+        },
+        "answer" : {
+            "text" : "$$F=\\frac{\\sigma}{2\\epsilon_{0}}|q|=5.647\\cdot 10^{-7}N$$",
+            "image" : null
+        }
+    }
+]

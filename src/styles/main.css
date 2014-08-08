@@ -1,0 +1,139 @@
+@font-face{
+    font-family: 'roboto-bold';
+    src: url('../assets/typefaces/roboto_bold_macroman/Roboto-Bold-webfont.eot');
+    src: url('../assets/typefaces/roboto_bold_macroman/Roboto-Bold-webfont.eot?iefix') format('eot'),
+        url('../assets/typefaces/roboto_bold_macroman/Roboto-Bold-webfont.woff') format('woff'),
+        url('../assets/typefaces/roboto_bold_macroman/Roboto-Bold-webfont.ttf') format('truetype'),
+        url('../assets/typefaces/roboto_bold_macroman/Roboto-Bold-webfont.svg#webfont') format('svg');
+}
+
+body
+{
+    font-size: 18px;
+    color: #131313;
+}
+
+/** HEADER **/
+header {
+    height: 4.5em;
+    background-color: #01cfe6;
+    color: white;
+    padding: 2.2em 0 1em 0;
+}
+header h1 {
+    font-size: 2.4em;
+    font-family: 'roboto-bold';
+    text-align: center;
+}
+header h3 {
+    font-size: 1.2em;
+    font-family: 'Arial';
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+}
+
+/** CONTENT **/
+#menu {
+    position: relative; top: 0; left: 10vw;
+    width: 10em;
+    background-color: #01cfe6;
+    text-align: center;
+}
+#menu .description {
+    color: white; font-family: 'roboto'; font-size: 1em; vertical-align: middle;
+}
+#container {
+    margin: 1.5em 30vw 0 30vw;
+    line-height: 1.45em;
+}
+#container h2 {
+    font-size: 2em; font-style: italic; font-family: sans-serif;
+}
+#container h2 {
+    font-size: 2em; font-style: italic; font-family: sans-serif;
+}
+#container .lectureContent {
+    margin-top: 1.5em;
+}
+
+#container .lectureContent .exercise{
+    display: block;
+}
+#container .lectureContent .exercise .margin .numberContainer {
+    display:  block;  /*height: 1.2em;*/ width: 1.4em; line-height: 1.2em;
+    position: relative;
+    background-color: #01cfe6; text-align: center; vertical-align: middle;
+    font-size: 1.2em; color: white;
+}
+
+#container .lectureContent .exercise .exerciseContainer {
+    display: inline;position: relative;
+}
+
+#container .lectureContent .exercise .exerciseContainer .question .open {
+    float: right;
+    width: 5em; line-height: 1.5em;
+    transition: background-color 0.4s ease; background-color: #8EBF45;
+    color: white; text-align: center; font-weight: 400; padding-top: 0.1em;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+#container .lectureContent .exercise .exerciseContainer .question .open:hover {
+    transition: background-color 0.4s ease; background-color: #ff0707;
+}
+#container .lectureContent .exercise .exerciseContainer .question .image {
+    margin-top: 1em;
+}
+#container .lectureContent .exercise .exerciseContainer .question .image img {
+    display: block;
+    margin: auto;
+}
+
+
+#container .lectureContent .exercise .exerciseContainer .answer {
+    display: block;
+    margin-top: 1.2em;
+    background-color: #f8f7f7;
+    padding: 1.1em 1em 0.7em 1em;
+}
+#container .lectureContent .exercise .exerciseContainer .answer .close {
+    position: absolute; right: 0; top: 0;
+    width: 1.2em; line-height: 1.2em;
+    transition: background-color 0.4s ease-out;
+    background-color: #3c3c3c;
+    color: white; text-align: center; font-weight: 400;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+#container .lectureContent .exercise .exerciseContainer .answer .close:hover {
+    transition: background-color 0.4s ease-in;
+    background-color: #606060;
+    color: white;
+}
+#container .lectureContent .exercise .exerciseContainer .answer .image {
+    margin-top: 1em;
+}
+#container .lectureContent .exercise .exerciseContainer .answer .image img {
+    display: block;
+    margin: auto;
+}
+
+/** FOOTER **/
+footer {
+    margin: 3.5em 0 0 0;
+    display: block;
+    width: 100%; height: 2px;
+    background-image: url('../assets/images/web/bottom.png');
+    background-repeat: repeat-x;
+}

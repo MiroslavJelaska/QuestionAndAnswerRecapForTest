@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Elektrotehnika</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.2.21/angular-route.js"></script>
+
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/services/lectureRepository.js"></script>
+    <script type="text/javascript" src="scripts/directives/mathjaxBind.js"></script>
+    <script type="text/javascript" src="scripts/helpers/range.js"></script>
+
+    <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body ng-app="main">
+    <header>
+        <h1>ELEKTROTEHNIKA</h1>
+        <h3>Ogledna ispitna pitanja &amp; odgovori</h3>
+    </header>
+    <div ng-controller="MainController">
+        <div id="menu">
+            <select ng-model="activeLecture" ng-options="n for n in [] | range:1:numberOfLectures" ng-change="loadActiveLecture()"></select>
+            <span class="description">PREDAVANJE</span>
+        </div>
+
+        <div id="container">
+            <h2>Predavanje {{activeLecture}}.</h2>
+            <div class="lectureContent" ng-repeat="exercise in lectureContent">
+
+                <div class="exercise">
+                    <div class="margin">
+                        <div class="numberContainer"><span class="number">{{$index + 1}}</span></div>
+                    </div>
+
+
+                    <div class="exerciseContainer">
+
+                        <div class="question">
+                            <span mathjax-bind="exercise.question.text"></span>
+                            <div ng-if="exercise.question.image" class="image">
+                                <img ng-src="{{exercise.question.image}}">
+                            </div>
+                            <div ng-show="!exercise.isVisible" class="open" ng-model="exercise.isVisible" ng-click="exercise.isVisible = true">
+                                Odgovor
+                            </div>
+                        </div>
+
+                        <div class="answer" ng-show="exercise.isVisible">
+                            <div class="close" ng-model="exercise.isVisible" ng-click="exercise.isVisible = false">
+                                X
+                            </div>
+                            <span mathjax-bind="exercise.answer.text"></span>
+                            <div ng-if="exercise.answer.image" class="image">
+                                <img ng-src="{{exercise.answer.image}}">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer></footer>
+</body>
+</html>
+<!--TeXBug: \oiint-->
