@@ -5,7 +5,7 @@ main.factory('lectureRepository', ['$http', function ($http) {
     var settings = {
 
         lectureRelativePath: 'lectures/',
-        numberOfLectures:    2
+        numberOfLectures:    2 //NOTE: Set number of lectures
     };
 
     var generateLectureUri = function(lectureNumber){
